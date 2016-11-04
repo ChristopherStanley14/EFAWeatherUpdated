@@ -27,6 +27,8 @@
 		B96DDCF21DCD1B9900612597 /* NowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96DDCF11DCD1B9900612597 /* NowController.swift */; };
 		B96DDCF41DCD1BE300612597 /* FutureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96DDCF31DCD1BE300612597 /* FutureController.swift */; };
 		B96DDCF61DCD1CB600612597 /* WeatherRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96DDCF51DCD1CB600612597 /* WeatherRowController.swift */; };
+		B96DDCF81DCD221000612597 /* WatchUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96DDCF71DCD221000612597 /* WatchUtils.swift */; };
+		B96DDCFA1DCD233C00612597 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96DDCF91DCD233C00612597 /* WatchSessionManager.swift */; };
 		F128CADC1D19BB0C00D7C4D6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F128CADB1D19BB0C00D7C4D6 /* Utils.swift */; };
 		F128CADF1D19DEAC00D7C4D6 /* FlipAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F128CADE1D19DEAC00D7C4D6 /* FlipAnimationController.swift */; };
 		F128CAE11D19DF5000D7C4D6 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F128CAE01D19DF5000D7C4D6 /* AnimationHelper.swift */; };
@@ -116,6 +118,8 @@
 		B96DDCF11DCD1B9900612597 /* NowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowController.swift; sourceTree = "<group>"; };
 		B96DDCF31DCD1BE300612597 /* FutureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureController.swift; sourceTree = "<group>"; };
 		B96DDCF51DCD1CB600612597 /* WeatherRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRowController.swift; sourceTree = "<group>"; };
+		B96DDCF71DCD221000612597 /* WatchUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchUtils.swift; sourceTree = "<group>"; };
+		B96DDCF91DCD233C00612597 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		E73E4193FBAB6B609DE02ED2 /* Pods-EFAWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EFAWeather/Pods-EFAWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		F128CADB1D19BB0C00D7C4D6 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Components/Utils.swift; sourceTree = "<group>"; };
 		F128CADE1D19DEAC00D7C4D6 /* FlipAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlipAnimationController.swift; path = Animators/FlipAnimationController.swift; sourceTree = "<group>"; };
@@ -205,12 +209,14 @@
 		2ECE76081DCD0D960068101E /* EFAWeatherWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B96DDCF71DCD221000612597 /* WatchUtils.swift */,
 				B96DDCF51DCD1CB600612597 /* WeatherRowController.swift */,
 				B96DDCF11DCD1B9900612597 /* NowController.swift */,
 				B96DDCF31DCD1BE300612597 /* FutureController.swift */,
 				2ECE760D1DCD0D960068101E /* ExtensionDelegate.swift */,
 				2ECE760F1DCD0D960068101E /* NotificationController.swift */,
 				2ECE76111DCD0D960068101E /* ComplicationController.swift */,
+				B96DDCF91DCD233C00612597 /* WatchSessionManager.swift */,
 				2ECE76131DCD0D960068101E /* Assets.xcassets */,
 				2ECE76151DCD0D960068101E /* Info.plist */,
 				2ECE76091DCD0D960068101E /* Supporting Files */,
@@ -581,10 +587,12 @@
 				2ECE76101DCD0D960068101E /* NotificationController.swift in Sources */,
 				2ECE76121DCD0D960068101E /* ComplicationController.swift in Sources */,
 				2ECE760E1DCD0D960068101E /* ExtensionDelegate.swift in Sources */,
+				B96DDCFA1DCD233C00612597 /* WatchSessionManager.swift in Sources */,
 				2ECE76241DCD0FCA0068101E /* WeatherData.swift in Sources */,
 				B96DDCF61DCD1CB600612597 /* WeatherRowController.swift in Sources */,
 				B96DDCF41DCD1BE300612597 /* FutureController.swift in Sources */,
 				2ECE76251DCD0FCF0068101E /* NetworkModel.swift in Sources */,
+				B96DDCF81DCD221000612597 /* WatchUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

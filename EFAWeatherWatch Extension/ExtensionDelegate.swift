@@ -12,6 +12,8 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        WebServices.shared.baseURL = "https://api.forecast.io/forecast"
+
     }
 
     func applicationDidBecomeActive() {

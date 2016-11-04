@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0297E3C33E60C987E96F7F1B /* Pods_EFAWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5524ECD22B8A4DA43CDBF238 /* Pods_EFAWeather.framework */; };
+		2ECE75FC1DCD0D950068101E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECE75FA1DCD0D950068101E /* Interface.storyboard */; };
+		2ECE75FE1DCD0D950068101E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ECE75FD1DCD0D950068101E /* Assets.xcassets */; };
+		2ECE76051DCD0D960068101E /* EFAWeatherWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2ECE76041DCD0D960068101E /* EFAWeatherWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2ECE760C1DCD0D960068101E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE760B1DCD0D960068101E /* InterfaceController.swift */; };
+		2ECE760E1DCD0D960068101E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE760D1DCD0D960068101E /* ExtensionDelegate.swift */; };
+		2ECE76101DCD0D960068101E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE760F1DCD0D960068101E /* NotificationController.swift */; };
+		2ECE76121DCD0D960068101E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE76111DCD0D960068101E /* ComplicationController.swift */; };
+		2ECE76141DCD0D960068101E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ECE76131DCD0D960068101E /* Assets.xcassets */; };
+		2ECE76181DCD0D960068101E /* EFAWeatherWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2ECE75F81DCD0D950068101E /* EFAWeatherWatch.app */; };
+		2ECE76201DCD0F5F0068101E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1782C541D0858E800AEC439 /* Constants.swift */; };
+		2ECE76211DCD0FAF0068101E /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1782C501D084D9A00AEC439 /* UserStore.swift */; };
+		2ECE76221DCD0FB60068101E /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14647841D086E5900C02341 /* Forecast.swift */; };
+		2ECE76231DCD0FC70068101E /* FutureWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14647881D088CCF00C02341 /* FutureWeather.swift */; };
+		2ECE76241DCD0FCA0068101E /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F146478A1D088D8600C02341 /* WeatherData.swift */; };
+		2ECE76251DCD0FCF0068101E /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1782C491D084C9E00AEC439 /* NetworkModel.swift */; };
+		2ECE76261DCD0FD10068101E /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1782C4A1D084C9E00AEC439 /* WebServices.swift */; };
+		2ECE76271DCD0FD50068101E /* WebservicesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1782C4B1D084C9E00AEC439 /* WebservicesExtension.swift */; };
+		F128CADC1D19BB0C00D7C4D6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F128CADB1D19BB0C00D7C4D6 /* Utils.swift */; };
+		F128CADF1D19DEAC00D7C4D6 /* FlipAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F128CADE1D19DEAC00D7C4D6 /* FlipAnimationController.swift */; };
+		F128CAE11D19DF5000D7C4D6 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F128CAE01D19DF5000D7C4D6 /* AnimationHelper.swift */; };
+		F128CAE31D19E03700D7C4D6 /* FlipBackAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F128CAE21D19E03700D7C4D6 /* FlipBackAnimationController.swift */; };
+		F128CAE51D19E23100D7C4D6 /* InteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F128CAE41D19E23100D7C4D6 /* InteractionController.swift */; };
+		F128CB4F1D1C3E5E00D7C4D6 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F128CB4E1D1C3E5E00D7C4D6 /* WatchSessionManager.swift */; };
+		F14647851D086E5900C02341 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14647841D086E5900C02341 /* Forecast.swift */; };
+		F14647891D088CCF00C02341 /* FutureWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14647881D088CCF00C02341 /* FutureWeather.swift */; };
+		F146478B1D088D8600C02341 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F146478A1D088D8600C02341 /* WeatherData.swift */; };
+		F1782C371D084BF400AEC439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1782C361D084BF400AEC439 /* AppDelegate.swift */; };
+		F1782C3C1D084BF400AEC439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1782C3A1D084BF400AEC439 /* Main.storyboard */; };
+		F1782C3E1D084BF400AEC439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1782C3D1D084BF400AEC439 /* Assets.xcassets */; };
+		F1782C411D084BF400AEC439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1782C3F1D084BF400AEC439 /* LaunchScreen.storyboard */; };
+		F1782C4C1D084C9E00AEC439 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1782C491D084C9E00AEC439 /* NetworkModel.swift */; };
+		F1782C4D1D084C9E00AEC439 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1782C4A1D084C9E00AEC439 /* WebServices.swift */; };
+		F1782C4E1D084C9E00AEC439 /* WebservicesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1782C4B1D084C9E00AEC439 /* WebservicesExtension.swift */; };
+		F1782C511D084D9A00AEC439 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1782C501D084D9A00AEC439 /* UserStore.swift */; };
+		F1782C551D0858E800AEC439 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1782C541D0858E800AEC439 /* Constants.swift */; };
+		F1C1D7B61D186B8000A6A743 /* CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C1D7B51D186B8000A6A743 /* CurrentViewController.swift */; };
+		F1C1D7B81D186B9E00A6A743 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C1D7B71D186B9E00A6A743 /* ForecastViewController.swift */; };
+		F1C1D7BB1D189E1500A6A743 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C1D7BA1D189E1500A6A743 /* DayCell.swift */; };
+		F1C1D7BF1D1971F300A6A743 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C1D7BE1D1971F300A6A743 /* MainViewController.swift */; };
+		F1C1D7C11D1973CF00A6A743 /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C1D7C01D1973CF00A6A743 /* SegueHandlerType.swift */; };
+		F1C1D7C31D19B8F200A6A743 /* HourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C1D7C21D19B8F200A6A743 /* HourCell.swift */; };
+		F6FCD5C266560D271D2F71FA /* Pods_EFAWeatherWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FFF1167BE745A3701671E4 /* Pods_EFAWeatherWatch_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2ECE76061DCD0D960068101E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1782C2B1D084BF400AEC439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ECE76031DCD0D960068101E;
+			remoteInfo = "EFAWeatherWatch Extension";
+		};
+		2ECE76161DCD0D960068101E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1782C2B1D084BF400AEC439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ECE75F71DCD0D950068101E;
+			remoteInfo = EFAWeatherWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2ECE761C1DCD0D960068101E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2ECE76051DCD0D960068101E /* EFAWeatherWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F128CB3C1D1B066D00D7C4D6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2ECE76181DCD0D960068101E /* EFAWeatherWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13DE41A262D8B5B66E426DC8 /* Pods-EFAWeatherWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAWeatherWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-EFAWeatherWatch Extension/Pods-EFAWeatherWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		2B161AA881A2A021E1E6C029 /* Pods-EFAWeatherWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAWeatherWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EFAWeatherWatch Extension/Pods-EFAWeatherWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		2ECE75F81DCD0D950068101E /* EFAWeatherWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EFAWeatherWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ECE75FB1DCD0D950068101E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2ECE75FD1DCD0D950068101E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2ECE75FF1DCD0D950068101E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ECE76041DCD0D960068101E /* EFAWeatherWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "EFAWeatherWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ECE760A1DCD0D960068101E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2ECE760B1DCD0D960068101E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2ECE760D1DCD0D960068101E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2ECE760F1DCD0D960068101E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2ECE76111DCD0D960068101E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		2ECE76131DCD0D960068101E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2ECE76151DCD0D960068101E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5524ECD22B8A4DA43CDBF238 /* Pods_EFAWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFAWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56FFF1167BE745A3701671E4 /* Pods_EFAWeatherWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFAWeatherWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		916237433AE84F0B7036465E /* Pods-EFAWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-EFAWeather/Pods-EFAWeather.release.xcconfig"; sourceTree = "<group>"; };
+		E73E4193FBAB6B609DE02ED2 /* Pods-EFAWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EFAWeather/Pods-EFAWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		F128CADB1D19BB0C00D7C4D6 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Components/Utils.swift; sourceTree = "<group>"; };
+		F128CADE1D19DEAC00D7C4D6 /* FlipAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlipAnimationController.swift; path = Animators/FlipAnimationController.swift; sourceTree = "<group>"; };
+		F128CAE01D19DF5000D7C4D6 /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationHelper.swift; path = Animators/AnimationHelper.swift; sourceTree = "<group>"; };
+		F128CAE21D19E03700D7C4D6 /* FlipBackAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipBackAnimationController.swift; sourceTree = "<group>"; };
+		F128CAE41D19E23100D7C4D6 /* InteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InteractionController.swift; path = Animators/InteractionController.swift; sourceTree = "<group>"; };
+		F128CB4E1D1C3E5E00D7C4D6 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WatchSessionManager.swift; path = Components/WatchSessionManager.swift; sourceTree = "<group>"; };
+		F14647841D086E5900C02341 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Forecast.swift; path = Models/Forecast.swift; sourceTree = "<group>"; };
+		F14647881D088CCF00C02341 /* FutureWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FutureWeather.swift; path = Models/FutureWeather.swift; sourceTree = "<group>"; };
+		F146478A1D088D8600C02341 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherData.swift; path = Models/WeatherData.swift; sourceTree = "<group>"; };
+		F1782C331D084BF400AEC439 /* EFAWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EFAWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1782C361D084BF400AEC439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1782C3B1D084BF400AEC439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1782C3D1D084BF400AEC439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1782C401D084BF400AEC439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1782C421D084BF400AEC439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1782C491D084C9E00AEC439 /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkModel.swift; path = Networking/NetworkModel.swift; sourceTree = "<group>"; };
+		F1782C4A1D084C9E00AEC439 /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebServices.swift; path = Networking/WebServices.swift; sourceTree = "<group>"; };
+		F1782C4B1D084C9E00AEC439 /* WebservicesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebservicesExtension.swift; path = Networking/WebservicesExtension.swift; sourceTree = "<group>"; };
+		F1782C501D084D9A00AEC439 /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserStore.swift; path = Components/UserStore.swift; sourceTree = "<group>"; };
+		F1782C541D0858E800AEC439 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Components/Constants.swift; sourceTree = "<group>"; };
+		F1C1D7B51D186B8000A6A743 /* CurrentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentViewController.swift; path = "View Controllers/CurrentViewController.swift"; sourceTree = "<group>"; };
+		F1C1D7B71D186B9E00A6A743 /* ForecastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastViewController.swift; path = "View Controllers/ForecastViewController.swift"; sourceTree = "<group>"; };
+		F1C1D7BA1D189E1500A6A743 /* DayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayCell.swift; path = "View Controllers/Table Cells/DayCell.swift"; sourceTree = "<group>"; };
+		F1C1D7BE1D1971F300A6A743 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "View Controllers/MainViewController.swift"; sourceTree = "<group>"; };
+		F1C1D7C01D1973CF00A6A743 /* SegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
+		F1C1D7C21D19B8F200A6A743 /* HourCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HourCell.swift; path = "View Controllers/Table Cells/HourCell.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2ECE76011DCD0D960068101E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6FCD5C266560D271D2F71FA /* Pods_EFAWeatherWatch_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0933097D0EB837033CBE20E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1782C301D084BF400AEC439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0297E3C33E60C987E96F7F1B /* Pods_EFAWeather.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A675EBD191F28949F948455 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E73E4193FBAB6B609DE02ED2 /* Pods-EFAWeather.debug.xcconfig */,
+				916237433AE84F0B7036465E /* Pods-EFAWeather.release.xcconfig */,
+				2B161AA881A2A021E1E6C029 /* Pods-EFAWeatherWatch Extension.debug.xcconfig */,
+				13DE41A262D8B5B66E426DC8 /* Pods-EFAWeatherWatch Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1FC0133836048A9BBD07BBA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5524ECD22B8A4DA43CDBF238 /* Pods_EFAWeather.framework */,
+				56FFF1167BE745A3701671E4 /* Pods_EFAWeatherWatch_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2ECE75F91DCD0D950068101E /* EFAWeatherWatch */ = {
+			isa = PBXGroup;
+			children = (
+				2ECE75FA1DCD0D950068101E /* Interface.storyboard */,
+				2ECE75FD1DCD0D950068101E /* Assets.xcassets */,
+				2ECE75FF1DCD0D950068101E /* Info.plist */,
+			);
+			path = EFAWeatherWatch;
+			sourceTree = "<group>";
+		};
+		2ECE76081DCD0D960068101E /* EFAWeatherWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2ECE760B1DCD0D960068101E /* InterfaceController.swift */,
+				2ECE760D1DCD0D960068101E /* ExtensionDelegate.swift */,
+				2ECE760F1DCD0D960068101E /* NotificationController.swift */,
+				2ECE76111DCD0D960068101E /* ComplicationController.swift */,
+				2ECE76131DCD0D960068101E /* Assets.xcassets */,
+				2ECE76151DCD0D960068101E /* Info.plist */,
+				2ECE76091DCD0D960068101E /* Supporting Files */,
+			);
+			path = "EFAWeatherWatch Extension";
+			sourceTree = "<group>";
+		};
+		2ECE76091DCD0D960068101E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2ECE760A1DCD0D960068101E /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F128CADD1D19D55F00D7C4D6 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				F128CAE01D19DF5000D7C4D6 /* AnimationHelper.swift */,
+				F128CADE1D19DEAC00D7C4D6 /* FlipAnimationController.swift */,
+				F128CAE21D19E03700D7C4D6 /* FlipBackAnimationController.swift */,
+				F128CAE41D19E23100D7C4D6 /* InteractionController.swift */,
+			);
+			name = Animators;
+			sourceTree = "<group>";
+		};
+		F14647831D086DEE00C02341 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F14647841D086E5900C02341 /* Forecast.swift */,
+				F14647881D088CCF00C02341 /* FutureWeather.swift */,
+				F146478A1D088D8600C02341 /* WeatherData.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F1782C2A1D084BF400AEC439 = {
+			isa = PBXGroup;
+			children = (
+				F1782C351D084BF400AEC439 /* EFAWeather */,
+				2ECE75F91DCD0D950068101E /* EFAWeatherWatch */,
+				2ECE76081DCD0D960068101E /* EFAWeatherWatch Extension */,
+				F1782C341D084BF400AEC439 /* Products */,
+				0A675EBD191F28949F948455 /* Pods */,
+				1FC0133836048A9BBD07BBA2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1782C341D084BF400AEC439 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1782C331D084BF400AEC439 /* EFAWeather.app */,
+				2ECE75F81DCD0D950068101E /* EFAWeatherWatch.app */,
+				2ECE76041DCD0D960068101E /* EFAWeatherWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1782C351D084BF400AEC439 /* EFAWeather */ = {
+			isa = PBXGroup;
+			children = (
+				F128CADD1D19D55F00D7C4D6 /* Animators */,
+				F1782C4F1D084D8600AEC439 /* Components */,
+				F14647831D086DEE00C02341 /* Models */,
+				F1782C481D084C9400AEC439 /* Networking */,
+				F1C1D7B41D186B5F00A6A743 /* View Controllers */,
+				F1782C361D084BF400AEC439 /* AppDelegate.swift */,
+				F1782C3A1D084BF400AEC439 /* Main.storyboard */,
+				F1782C3D1D084BF400AEC439 /* Assets.xcassets */,
+				F1782C3F1D084BF400AEC439 /* LaunchScreen.storyboard */,
+				F1782C421D084BF400AEC439 /* Info.plist */,
+			);
+			path = EFAWeather;
+			sourceTree = "<group>";
+		};
+		F1782C481D084C9400AEC439 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F1782C491D084C9E00AEC439 /* NetworkModel.swift */,
+				F1782C4A1D084C9E00AEC439 /* WebServices.swift */,
+				F1782C4B1D084C9E00AEC439 /* WebservicesExtension.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		F1782C4F1D084D8600AEC439 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F1782C541D0858E800AEC439 /* Constants.swift */,
+				F1C1D7C01D1973CF00A6A743 /* SegueHandlerType.swift */,
+				F128CB4E1D1C3E5E00D7C4D6 /* WatchSessionManager.swift */,
+				F1782C501D084D9A00AEC439 /* UserStore.swift */,
+				F128CADB1D19BB0C00D7C4D6 /* Utils.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		F1C1D7B41D186B5F00A6A743 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1C1D7B91D189DF300A6A743 /* Table Cells */,
+				F1C1D7B51D186B8000A6A743 /* CurrentViewController.swift */,
+				F1C1D7B71D186B9E00A6A743 /* ForecastViewController.swift */,
+				F1C1D7BE1D1971F300A6A743 /* MainViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F1C1D7B91D189DF300A6A743 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F1C1D7BA1D189E1500A6A743 /* DayCell.swift */,
+				F1C1D7C21D19B8F200A6A743 /* HourCell.swift */,
+			);
+			name = "Table Cells";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2ECE75F71DCD0D950068101E /* EFAWeatherWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ECE761D1DCD0D960068101E /* Build configuration list for PBXNativeTarget "EFAWeatherWatch" */;
+			buildPhases = (
+				2ECE75F61DCD0D950068101E /* Resources */,
+				2ECE761C1DCD0D960068101E /* Embed App Extensions */,
+				C0933097D0EB837033CBE20E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ECE76071DCD0D960068101E /* PBXTargetDependency */,
+			);
+			name = EFAWeatherWatch;
+			productName = EFAWeatherWatch;
+			productReference = 2ECE75F81DCD0D950068101E /* EFAWeatherWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2ECE76031DCD0D960068101E /* EFAWeatherWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ECE76191DCD0D960068101E /* Build configuration list for PBXNativeTarget "EFAWeatherWatch Extension" */;
+			buildPhases = (
+				31D5C5560E6A2F0E342EC75C /* [CP] Check Pods Manifest.lock */,
+				2ECE76001DCD0D960068101E /* Sources */,
+				2ECE76011DCD0D960068101E /* Frameworks */,
+				2ECE76021DCD0D960068101E /* Resources */,
+				711488D6D423A4C4429C5A94 /* [CP] Embed Pods Frameworks */,
+				BA488B681E4E8A6213A5FA47 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EFAWeatherWatch Extension";
+			productName = "EFAWeatherWatch Extension";
+			productReference = 2ECE76041DCD0D960068101E /* EFAWeatherWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		F1782C321D084BF400AEC439 /* EFAWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1782C451D084BF400AEC439 /* Build configuration list for PBXNativeTarget "EFAWeather" */;
+			buildPhases = (
+				AA1D1ED204ECF75268BFCE02 /* [CP] Check Pods Manifest.lock */,
+				F1782C2F1D084BF400AEC439 /* Sources */,
+				F1782C301D084BF400AEC439 /* Frameworks */,
+				F1782C311D084BF400AEC439 /* Resources */,
+				F128CB3C1D1B066D00D7C4D6 /* Embed Watch Content */,
+				CC5D7922F077C5F77E4FF80D /* [CP] Embed Pods Frameworks */,
+				EAE08EEE28D8FA740A36E642 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ECE76171DCD0D960068101E /* PBXTargetDependency */,
+			);
+			name = EFAWeather;
+			productName = EFAWeather;
+			productReference = F1782C331D084BF400AEC439 /* EFAWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1782C2B1D084BF400AEC439 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Eleven Fifty Academy";
+				TargetAttributes = {
+					2ECE75F71DCD0D950068101E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = N33QS9B626;
+						ProvisioningStyle = Automatic;
+					};
+					2ECE76031DCD0D960068101E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = N33QS9B626;
+						ProvisioningStyle = Automatic;
+					};
+					F1782C321D084BF400AEC439 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N33QS9B626;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F1782C2E1D084BF400AEC439 /* Build configuration list for PBXProject "EFAWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1782C2A1D084BF400AEC439;
+			productRefGroup = F1782C341D084BF400AEC439 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1782C321D084BF400AEC439 /* EFAWeather */,
+				2ECE75F71DCD0D950068101E /* EFAWeatherWatch */,
+				2ECE76031DCD0D960068101E /* EFAWeatherWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2ECE75F61DCD0D950068101E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECE75FE1DCD0D950068101E /* Assets.xcassets in Resources */,
+				2ECE75FC1DCD0D950068101E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ECE76021DCD0D960068101E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECE76141DCD0D960068101E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1782C311D084BF400AEC439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1782C411D084BF400AEC439 /* LaunchScreen.storyboard in Resources */,
+				F1782C3E1D084BF400AEC439 /* Assets.xcassets in Resources */,
+				F1782C3C1D084BF400AEC439 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31D5C5560E6A2F0E342EC75C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		711488D6D423A4C4429C5A94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EFAWeatherWatch Extension/Pods-EFAWeatherWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1D1ED204ECF75268BFCE02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA488B681E4E8A6213A5FA47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EFAWeatherWatch Extension/Pods-EFAWeatherWatch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC5D7922F077C5F77E4FF80D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EFAWeather/Pods-EFAWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAE08EEE28D8FA740A36E642 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EFAWeather/Pods-EFAWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ECE76001DCD0D960068101E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECE76211DCD0FAF0068101E /* UserStore.swift in Sources */,
+				2ECE76231DCD0FC70068101E /* FutureWeather.swift in Sources */,
+				2ECE76201DCD0F5F0068101E /* Constants.swift in Sources */,
+				2ECE76261DCD0FD10068101E /* WebServices.swift in Sources */,
+				2ECE76271DCD0FD50068101E /* WebservicesExtension.swift in Sources */,
+				2ECE76221DCD0FB60068101E /* Forecast.swift in Sources */,
+				2ECE76101DCD0D960068101E /* NotificationController.swift in Sources */,
+				2ECE76121DCD0D960068101E /* ComplicationController.swift in Sources */,
+				2ECE760E1DCD0D960068101E /* ExtensionDelegate.swift in Sources */,
+				2ECE76241DCD0FCA0068101E /* WeatherData.swift in Sources */,
+				2ECE76251DCD0FCF0068101E /* NetworkModel.swift in Sources */,
+				2ECE760C1DCD0D960068101E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1782C2F1D084BF400AEC439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C1D7C31D19B8F200A6A743 /* HourCell.swift in Sources */,
+				F1C1D7B61D186B8000A6A743 /* CurrentViewController.swift in Sources */,
+				F128CAE51D19E23100D7C4D6 /* InteractionController.swift in Sources */,
+				F1782C4E1D084C9E00AEC439 /* WebservicesExtension.swift in Sources */,
+				F1782C511D084D9A00AEC439 /* UserStore.swift in Sources */,
+				F14647891D088CCF00C02341 /* FutureWeather.swift in Sources */,
+				F14647851D086E5900C02341 /* Forecast.swift in Sources */,
+				F128CB4F1D1C3E5E00D7C4D6 /* WatchSessionManager.swift in Sources */,
+				F1782C4C1D084C9E00AEC439 /* NetworkModel.swift in Sources */,
+				F128CADC1D19BB0C00D7C4D6 /* Utils.swift in Sources */,
+				F1C1D7BF1D1971F300A6A743 /* MainViewController.swift in Sources */,
+				F146478B1D088D8600C02341 /* WeatherData.swift in Sources */,
+				F128CADF1D19DEAC00D7C4D6 /* FlipAnimationController.swift in Sources */,
+				F1782C371D084BF400AEC439 /* AppDelegate.swift in Sources */,
+				F1782C4D1D084C9E00AEC439 /* WebServices.swift in Sources */,
+				F1782C551D0858E800AEC439 /* Constants.swift in Sources */,
+				F128CAE11D19DF5000D7C4D6 /* AnimationHelper.swift in Sources */,
+				F1C1D7BB1D189E1500A6A743 /* DayCell.swift in Sources */,
+				F128CAE31D19E03700D7C4D6 /* FlipBackAnimationController.swift in Sources */,
+				F1C1D7C11D1973CF00A6A743 /* SegueHandlerType.swift in Sources */,
+				F1C1D7B81D186B9E00A6A743 /* ForecastViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2ECE76071DCD0D960068101E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2ECE76031DCD0D960068101E /* EFAWeatherWatch Extension */;
+			targetProxy = 2ECE76061DCD0D960068101E /* PBXContainerItemProxy */;
+		};
+		2ECE76171DCD0D960068101E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2ECE75F71DCD0D950068101E /* EFAWeatherWatch */;
+			targetProxy = 2ECE76161DCD0D960068101E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2ECE75FA1DCD0D950068101E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ECE75FB1DCD0D950068101E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		F1782C3A1D084BF400AEC439 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1782C3B1D084BF400AEC439 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1782C3F1D084BF400AEC439 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1782C401D084BF400AEC439 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2ECE761A1DCD0D960068101E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B161AA881A2A021E1E6C029 /* Pods-EFAWeatherWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = N33QS9B626;
+				INFOPLIST_FILE = "EFAWeatherWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.efa.EFAWeather.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		2ECE761B1DCD0D960068101E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13DE41A262D8B5B66E426DC8 /* Pods-EFAWeatherWatch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = N33QS9B626;
+				INFOPLIST_FILE = "EFAWeatherWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.efa.EFAWeather.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		2ECE761E1DCD0D960068101E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N33QS9B626;
+				IBSC_MODULE = EFAWeatherWatch_Extension;
+				INFOPLIST_FILE = EFAWeatherWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.efa.EFAWeather.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		2ECE761F1DCD0D960068101E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N33QS9B626;
+				IBSC_MODULE = EFAWeatherWatch_Extension;
+				INFOPLIST_FILE = EFAWeatherWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.efa.EFAWeather.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		F1782C431D084BF400AEC439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1782C441D084BF400AEC439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1782C461D084BF400AEC439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E73E4193FBAB6B609DE02ED2 /* Pods-EFAWeather.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N33QS9B626;
+				INFOPLIST_FILE = EFAWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.efa.EFAWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F1782C471D084BF400AEC439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916237433AE84F0B7036465E /* Pods-EFAWeather.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N33QS9B626;
+				INFOPLIST_FILE = EFAWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.efa.EFAWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2ECE76191DCD0D960068101E /* Build configuration list for PBXNativeTarget "EFAWeatherWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ECE761A1DCD0D960068101E /* Debug */,
+				2ECE761B1DCD0D960068101E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ECE761D1DCD0D960068101E /* Build configuration list for PBXNativeTarget "EFAWeatherWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ECE761E1DCD0D960068101E /* Debug */,
+				2ECE761F1DCD0D960068101E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1782C2E1D084BF400AEC439 /* Build configuration list for PBXProject "EFAWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1782C431D084BF400AEC439 /* Debug */,
+				F1782C441D084BF400AEC439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1782C451D084BF400AEC439 /* Build configuration list for PBXNativeTarget "EFAWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1782C461D084BF400AEC439 /* Debug */,
+				F1782C471D084BF400AEC439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1782C2B1D084BF400AEC439 /* Project object */;
+}

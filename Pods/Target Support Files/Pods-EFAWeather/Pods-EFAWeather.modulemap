@@ -1,0 +1,6 @@
+framework module Pods_EFAWeather {
+  umbrella header "Pods-EFAWeather-umbrella.h"
+
+  export *
+  module * { export * }
+}

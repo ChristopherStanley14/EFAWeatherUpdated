@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Alamofire-iOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Alamofire-watchOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Freddy-iOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Freddy-watchOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Pods-EFAWeather.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>Pods-EFAWeatherWatch Extension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>173E4104E4F2CE5ECC896A154802C6D5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>24C566D201053F785A784FC9C4108D9A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D8199C20C1BE5F5BCDBC8F8CB4BF089</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55AE002DB1064C8FF6FC5AF4C4FD47F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>897B916C02ABE4D9838882E6F0FFDEBE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC2962827484539BF458FD88EB1838D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
